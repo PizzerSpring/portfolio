@@ -1,0 +1,26 @@
+.myskills {
+    height: 625px;
+    background: #FAFAD2;
+    padding: 80px;
+}
+.myskillsH3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.myskillscontainer {
+    display: flex;
+    justify-content: space-between;
+}
+.myskillslevel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.myskillsskills {
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
