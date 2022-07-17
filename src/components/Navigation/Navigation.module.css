@@ -1,0 +1,12 @@
+.nav {
+    border: 1px solid black;
+}
+
+.navImg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 1px solid;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainText {
+    border: 1px solid black;
+}
+.mainTextP {
+    line-height: 30px;
+}
+.mainAvatar {
+    border: 1px solid;
+    height: 500px;
+    width: 400px;
+    background: #FFFFFF;
+}
