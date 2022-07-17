@@ -1,0 +1,43 @@
+.aboutme {
+    height: 625px;
+    background: #E6E6FA;
+    padding: 80px;
+}
+
+.aboutmeH2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.aboutmecontainer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutmePersonalcontainer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 50%;
+}
+.aboutmeworkcontainer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+.aboutmeworkcard {
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.aboutmepersonalinfo {
+    line-height: 40px;
+    border: 1px solid black;
+}
+.aboutmepersonalinfotwo {
+    margin-top: 40px;
+}
