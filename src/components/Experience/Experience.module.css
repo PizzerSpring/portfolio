@@ -1,0 +1,17 @@
+.exp {
+    height: 625px;
+    background: #F0FFF0;
+    padding: 80px;
+}
+
+.expH3 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.expcontainer {
+    display: flex;
+    justify-content: space-around;
+}
+.expeducation {
+    margin-bottom: 30px;
+}
