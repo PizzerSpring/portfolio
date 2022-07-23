@@ -1,5 +1,6 @@
 .header {
-    height: 625px;
+    min-height: 100vh;
     background: #FFEBCD;
-    padding: 80px;
+    display: flex;
+    align-items: center;
 }

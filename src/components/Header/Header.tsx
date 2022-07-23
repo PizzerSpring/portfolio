@@ -4,9 +4,9 @@ import Main from "../Main/Main";
 
 const Header = () => {
     return (
-        <div className={style.header}>
+        <header className={style.header}>
             <Main/>
-        </div>
+        </header>
     );
 };
 

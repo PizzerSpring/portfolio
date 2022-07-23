@@ -1,5 +1,5 @@
 .projects {
-    height: 625px;
+    min-height: 100vh;
     background: #98FB98;
     padding: 80px;
 }

@@ -1,5 +1,5 @@
 .exp {
-    height: 625px;
+    min-height: 100vh;
     background: #F0FFF0;
     padding: 80px;
 }

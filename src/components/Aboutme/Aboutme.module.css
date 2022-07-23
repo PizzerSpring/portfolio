@@ -1,43 +1,43 @@
-.aboutme {
-    height: 625px;
+.aboutMeBlock {
+    min-height: 100vh;
     background: #E6E6FA;
-    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.aboutmeH2 {
+.aboutMe {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.aboutmecontainer {
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-between;
-}
-
-.aboutmePersonalcontainer {
+.personalContainer {
     border: 1px solid black;
     display: flex;
     justify-content: space-around;
     flex-basis: 50%;
+    flex-wrap: wrap;
 }
-.aboutmeworkcontainer {
+.workContainer {
     border: 1px solid black;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
     flex-basis: 50%;
 }
 
-.aboutmeworkcard {
+.card {
     margin-bottom: 20px;
     border: 1px solid black;
+    padding: 15px;
 }
 
-.aboutmepersonalinfo {
+.info {
     line-height: 40px;
     border: 1px solid black;
+    padding: 30px;
 }
-.aboutmepersonalinfotwo {
+
+.exactInfo {
     margin-top: 40px;
 }

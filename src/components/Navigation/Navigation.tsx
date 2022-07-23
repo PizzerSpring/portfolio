@@ -3,13 +3,14 @@ import style from './Navigation.module.css';
 
 const Navigation = () => {
     return (
-        <div className={style.nav}>
-            <div className={style.navImg}></div>
-            <div className={style.navImg}></div>
-            <div className={style.navImg}></div>
-            <div className={style.navImg}></div>
-            <div className={style.navImg}></div>
-        </div>
+        <nav className={style.navigation}>
+            <div className={style.imgLinks}></div>
+            <div className={style.imgLinks}></div>
+            <div className={style.imgLinks}></div>
+            <div className={style.imgLinks}></div>
+            <div className={style.imgLinks}></div>
+            <div className={style.imgLinks}></div>
+        </nav>
     );
 };
 
