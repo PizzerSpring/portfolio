@@ -1,17 +1,16 @@
-.exp {
+.experience {
     min-height: 100vh;
     background: #F0FFF0;
-    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.expH3 {
+.title {
     text-align: center;
     margin-bottom: 50px;
 }
-.expcontainer {
-    display: flex;
-    justify-content: space-around;
-}
-.expeducation {
-    margin-bottom: 30px;
+
+.education {
+    padding: 20px;
 }
