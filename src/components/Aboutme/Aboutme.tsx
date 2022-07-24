@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Aboutme.module.css';
 import containerStyle from './../../commons/Container.module.css';
-import Card from "./Card";
+import AboutMeCard from "./AboutMeCard";
 
 const Aboutme = () => {
     return (
@@ -28,12 +28,12 @@ const Aboutme = () => {
                 </div>
                 <div className={style.workContainer}>
                     <div>
-                        <Card count={'12+'} description={'YEARS OF EXPERIENCE'}/>
-                        <Card count={'22+'} description={'HAPPY CUSTOMERS'}/>
+                        <AboutMeCard count={'12+'} description={'YEARS OF EXPERIENCE'}/>
+                        <AboutMeCard count={'22+'} description={'HAPPY CUSTOMERS'}/>
                     </div>
                     <div>
-                        <Card count={'6+'} description={'COMPLETED PROJECTS'}/>
-                        <Card count={'45+'} description={'AWARDS WON'}/>
+                        <AboutMeCard count={'6+'} description={'COMPLETED PROJECTS'}/>
+                        <AboutMeCard count={'45+'} description={'AWARDS WON'}/>
                     </div>
                 </div>
             </div>

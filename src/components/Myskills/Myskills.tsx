@@ -1,50 +1,28 @@
 import React from 'react';
-import style from './Myskills.module.css'
+import style from './Myskills.module.css';
+import containerStyle from './../../commons/Container.module.css';
+import SkillsCard from "./SkillsCard";
 
 const Myskills = () => {
     return (
-        <div className={style.myskills}>
-            <h3 className={style.myskillsH3}>MY SKILLS</h3>
-            <div className={style.myskillscontainer}>
+        <div className={style.mySkills}>
+            <h2 className={style.title}>MY SKILLS</h2>
+            <div className={containerStyle.container}>
                 <div>
-                    <div className={style.myskillsskills}>
-                        <div className={style.myskillslevel}>80%</div>
-                        <div>HTML</div>
-                    </div>
-                    <div className={style.myskillsskills}>
-                        <div className={style.myskillslevel}>60%</div>
-                        <div>CSS</div>
-                    </div>
+                    <SkillsCard count={'80%'} title={'HTML'}/>
+                    <SkillsCard count={'60%'} title={'CSS'}/>
                 </div>
                 <div>
-                    <div className={style.myskillsskills}>
-                        <div className={style.myskillslevel}>50%</div>
-                        <div>JAVASCRIPT</div>
-                    </div>
-                    <div className={style.myskillsskills}>
-                        <div className={style.myskillslevel}>70%</div>
-                        <div>TYPESCRIPT</div>
-                    </div>
+                    <SkillsCard count={'50%'} title={'JAVASCRIPT'}/>
+                    <SkillsCard count={'70%'} title={'TYPESCRIPT'}/>
                 </div>
                 <div>
-                    <div className={style.myskillsskills}>
-                        <div className={style.myskillslevel}>40%</div>
-                        <div>REACT</div>
-                    </div>
-                    <div className={style.myskillsskills}>
-                        <div className={style.myskillslevel}>20%</div>
-                        <div>JQUERY</div>
-                    </div>
+                    <SkillsCard count={'40%'} title={'REACT'}/>
+                    <SkillsCard count={'20%'} title={'JQUERY'}/>
                 </div>
                 <div>
-                    <div className={style.myskillsskills}>
-                        <div className={style.myskillslevel}>90%</div>
-                        <div>REDUX</div>
-                    </div>
-                    <div  className={style.myskillsskills}>
-                        <div className={style.myskillslevel}>5%</div>
-                        <div>PHP</div>
-                    </div>
+                    <SkillsCard count={'90%'} title={'REDUX'}/>
+                    <SkillsCard count={'5%'} title={'PHP'}/>
                 </div>
             </div>
         </div>

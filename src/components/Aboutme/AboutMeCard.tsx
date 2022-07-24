@@ -1,12 +1,12 @@
 import React from 'react';
 import style from './Aboutme.module.css';
 
-type CardPropsType = {
+type AboutMeCardPropsType = {
     count: string
     description: string
 }
 
-const Card = (props: CardPropsType) => {
+const AboutMeCard = (props: AboutMeCardPropsType) => {
     return (
         <div className={style.card}>
             <span>{props.count}</span>
@@ -15,4 +15,4 @@ const Card = (props: CardPropsType) => {
     );
 };
 
-export default Card;
+export default AboutMeCard;
