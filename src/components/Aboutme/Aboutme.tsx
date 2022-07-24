@@ -6,7 +6,7 @@ import AboutMeCard from "./AboutMeCard";
 const Aboutme = () => {
     return (
         <div className={style.aboutMe}>
-            <h2 className={style.aboutMe}>ABOUT ME</h2>
+            <h2 className={style.title}>ABOUT ME</h2>
             <div className={`${containerStyle.container}`}>
                 <div className={style.personalContainer}>
                     <div className={style.info}>
