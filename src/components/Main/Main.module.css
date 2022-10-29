@@ -6,16 +6,110 @@
     width: 80%;
     margin: 0 auto;
 }
+.textPhoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
 .text {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding: 30px;
 }
 .description {
-    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px 0 28px;
+    font-size: 16px;
+    line-height: 35px;
+    color: #f8f9fa;
 }
 .photo {
-    border: 1px solid;
+    /*border: 1px solid;*/
     height: 500px;
     width: 400px;
-    background: #FFFFFF;
+    background: url("https://img.hhcdn.ru/photo/633362884.jpeg?t=1667149061&h=FN8rvaebIFdFvL-8IE8CUw");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    border-radius: 30px;
+}
+
+.mainTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    color: #ffb400;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+.mainTitle span {
+    color: #fff;
+    display: block;
+}
+
+.frame {
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    transform: rotate(-15deg);
+    left: -83%;
+    top: -50%;
+    background-color: #ffb400;
+}
+
+.buttonAboutMe {
+    display: inline-block;
+    line-height: 1.4;
+    border-radius: 35px;
+    text-decoration: none;
+    position: relative;
+    padding: 16px 70px 16px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #ffb400;
+}
+
+.buttonAboutMe:hover {
+    background-color: #ffb400;
+    transition: background-color 250ms ease-in-out;
+}
+
+.longArrow {
+    display: block;
+    width: 18px;
+    height: 4px;
+    border-radius: 5px;
+    background: #fff;
+    transform: translate(18px, 24px);
+}
+.longArrowT {
+    display: block;
+    width: 14px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    transform:rotate(45deg) translate(26px, -6px);
+}
+.longArrowB {
+     display: block;
+     width: 14px;
+     height: 5px;
+     border-radius: 5px;
+     background: #fff;
+     transform:rotate(-45deg) translate(2px, 30px);
+ }
+
+
+.buttonAboutMeIcon {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #ffb400;
 }

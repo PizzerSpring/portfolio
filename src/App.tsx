@@ -10,11 +10,11 @@ import Experience from "./components/Experience/Experience";
 function App() {
     return (
         <div className="App">
-            {/*<Header/>
+            <Header/>
             <Aboutme/>
             <Myskills/>
             <Experience/>
-            <Projects/>*/}
+            <Projects/>
             <Footer/>
         </div>
     );
