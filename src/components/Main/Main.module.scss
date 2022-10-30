@@ -1,0 +1,125 @@
+@import "../../commons/sass/variables";
+@import "../../commons/sass/mixins";
+
+.mainContainer {
+    width: 90%;
+    margin: 0 auto;
+    .frame {
+        position: absolute;
+        height: 200%;
+        width: 100%;
+        transform: rotate(-15deg);
+        left: -83%;
+        top: -50%;
+        background-color: $mainColor;
+        @media screen and (max-width: 991px){
+            position: relative;
+        }
+    }
+    .textPhoto {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        @media screen and (max-width: 991px) {
+            flex-direction: column;
+            text-align: center;
+        }
+        .photo {
+            /*border: 1px solid;*/
+            height: 500px;
+            min-width: 350px;
+            background: url("https://img.hhcdn.ru/photo/633362884.jpeg?t=1667149061&h=FN8rvaebIFdFvL-8IE8CUw") no-repeat center;
+            background-size: cover;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+            border-radius: 30px;
+            @media screen and (max-width: 991px){
+                border-radius: 50%;
+                width: 370px;
+                height: 370px;
+                border: 4px solid #252525;
+                margin: 0 auto 25px;
+                display: block;
+            }
+        }
+        .text {
+            /*border: 1px solid black;*/
+            padding: 30px;
+            .mainTitle {
+                @include text($fontFamilyMain, 42px, 700, $mainColor, 52px);
+                position: relative;
+                padding-left: 70px;
+                @media screen and (max-width: 1200px){
+                    padding-left: 0;
+                }
+                @media screen and (max-width: 991px){
+                    font-size: 38px;
+                    line-height: 48px;
+                    margin: 29px 0 13px;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 24px;
+                    height: 4px;
+                    width: 40px;
+                    border-radius: 10px;
+                    background: $mainColor;
+                    @media screen and (max-width: 1200px){
+                        position: relative;
+                    }
+                }
+                span {
+                    color: $secondColor;
+                    display: block;
+                }
+            }
+            .description {
+                @include text($fontFamilySecond, 16px, 400, $descriptionColor, 35px);
+                margin: 15px 0 28px;
+                max-width: 550px;
+                @media screen and (max-width: 991px){
+                    margin: 10px 0 23px;
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+            }
+            .buttonAboutMe {
+                @include text($fontFamilyMain, 15px, 600, $secondColor, 1.4);
+                display: inline-block;
+                border-radius: 35px;
+                text-decoration: none;
+                position: relative;
+                padding: 16px 70px 16px 35px;
+                border: 1px solid $mainColor;
+                &:hover {
+                    background-color: $mainColor;
+                    transition: background-color 250ms ease-in-out;
+                }
+                .buttonAboutMeIcon {
+                    position: absolute;
+                    right: -1px;
+                    top: -1px;
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+                    background-color: $mainColor;
+                    .longArrow {
+                        @include transformArrow(block, 18px, 4px, 5px, $secondColor, translate(18px, 24px));
+                    }
+                    .longArrowT {
+                        @include transformArrow(block, 14px, 5px, 5px, $secondColor, rotate(45deg) translate(26px, -6px));
+                    }
+                    .longArrowB {
+                        @include transformArrow(block, 14px, 5px, 5px, $secondColor, rotate(-45deg) translate(2px, 30px));
+                    }
+                }
+            }
+        }
+    }
+}
+

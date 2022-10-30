@@ -1,0 +1,18 @@
+@import "./variables";
+
+@mixin text($fontFamily, $fontSize,$fontWeight, $color,$lineHeight) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  color: $color;
+  line-height: $lineHeight;
+}
+
+@mixin transformArrow($dispay,$width,$height,$borderRadius,$background,$transform) {
+  display: $dispay;
+  width: $width;
+  height: $height;
+  border-radius: $borderRadius;
+  background: $background;
+  transform: $transform;
+}
