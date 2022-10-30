@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Aboutme.module.css';
+import style from './Aboutme.module.scss';
 
 type AboutMeCardPropsType = {
     count: string

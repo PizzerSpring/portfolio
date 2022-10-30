@@ -1,0 +1,103 @@
+@import "../../commons/sass/variables";
+
+.aboutMe {
+    min-height: 100vh;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.aboutMeTitle {
+    padding: 80px 0;
+    position: relative;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+}
+
+.title span {
+    color: $mainColor;
+}
+
+.titleBackground {
+    font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.07);
+    text-align: center;
+}
+
+.personalContainer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 50%;
+    flex-wrap: wrap;
+}
+
+.workContainer {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.card {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.info {
+    line-height: 40px;
+    border: 1px solid black;
+    padding: 30px;
+    max-width: 50%;
+}
+
+.listUnstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.titleInfo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.6;
+    opacity: .8;
+}
+
+.titleValueInfo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.exactInfo {
+    margin-top: 40px;
+}
+
+.personalTitle {
+    padding-bottom: 22px;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 600;
+}

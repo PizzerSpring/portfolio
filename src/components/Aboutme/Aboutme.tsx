@@ -1,21 +1,26 @@
 import React from 'react';
-import style from './Aboutme.module.css';
+import style from './Aboutme.module.scss';
 import containerStyle from './../../commons/Container.module.css';
 import AboutMeCard from "./AboutMeCard";
 
 const Aboutme = () => {
     return (
         <div className={style.aboutMe}>
-            <h2 className={style.title}>ABOUT ME</h2>
+            <div className={style.aboutMeTitle}>
+                <h2 className={style.title}>ABOUT <span>ME</span></h2>
+                <span className={style.titleBackground}>Resume</span>
+            </div>
             <div className={`${containerStyle.container}`}>
                 <div className={style.personalContainer}>
                     <div className={style.info}>
-                        <h3>PERSONAL INFO</h3>
-                        <p><span>First Name: </span>Vladislav</p>
-                        <p><span>Last Name: </span>Gushchin</p>
-                        <p><span>Age: </span>26 Years</p>
-                        <p><span>Nationality: </span>Russian</p>
-                        <p><span>Freelance: </span>Accessible</p>
+                        <h3 className={style.personalTitle}>PERSONAL INFO</h3>
+                        <ul className={style.listUnstyled}>
+                            <li><span className={style.titleInfo}>First Name : </span><span className={style.titleValueInfo}>Vladislav</span></li>
+                            <li><span className={style.titleInfo}>Last Name : </span><span className={style.titleValueInfo}>Gushchin</span></li>
+                            <li><span className={style.titleInfo}>Age : </span><span className={style.titleValueInfo}>26 Years</span></li>
+                            <li><span className={style.titleInfo}>Nationality : </span><span className={style.titleValueInfo}>Russian</span></li>
+                            <li><span className={style.titleInfo}>Freelance : </span><span className={style.titleValueInfo}>Accessible</span></li>
+                        </ul>
                         <div><a href="">DOWNLOAD CV</a></div>
                     </div>
                     <div className={`${style.info} ${style.exactInfo}`}>
