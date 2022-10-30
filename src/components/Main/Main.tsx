@@ -12,7 +12,9 @@ const Main = () => {
                     <h1 className={style.mainTitle}>I'M VLADISLAV GUSHCHIN
                         <span>REACT DEVELOPER</span>
                     </h1>
-                    <p className={style.description}>I'm a Tunisian based web designer & front‑end developer focused on<br/> crafting clean & user‑friendly experiences, I am passionate about building<br/> excellent software that improves the lives of those around me.</p>
+                    <p className={style.description}>I am a front-end developer from Novokuznetsk, specializing in
+                        creating an interface for user interaction. I am using the react framework. I'm passionate about creating
+                        great software that will improve the lives of those around you.</p>
                     <a className={style.buttonAboutMe} href="">
                         <span className={style.buttonAboutMeText}>MORE ABOUT ME</span>
                         <span className={style.buttonAboutMeIcon}>
@@ -22,8 +24,8 @@ const Main = () => {
                     </span>
                     </a>
                 </div>
+                <Navigation/>
             </div>
-            {/*<Navigation/>*/}
         </main>
     );
 };

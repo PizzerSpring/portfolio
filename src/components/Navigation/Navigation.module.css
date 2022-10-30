@@ -11,3 +11,9 @@
     border: 1px solid;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 991px){
+    .navigation {
+        display: none;
+    }
+}
