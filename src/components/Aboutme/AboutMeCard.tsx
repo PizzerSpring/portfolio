@@ -3,14 +3,18 @@ import style from './Aboutme.module.scss';
 
 type AboutMeCardPropsType = {
     count: string
-    description: string
+    descriptionTop: string
+    descriptionBottom: string
 }
 
 const AboutMeCard = (props: AboutMeCardPropsType) => {
     return (
         <div className={style.card}>
-            <span>{props.count}</span>
-            <p>{props.description}</p>
+            <h3 className={style.countValue}>{props.count}</h3>
+            <p className={style.descriptionContainer}>
+                {props.descriptionTop}
+                <span className={style.description}>{props.descriptionBottom}</span>
+            </p>
         </div>
     );
 };

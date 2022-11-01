@@ -58,9 +58,10 @@
 }
 
 .card {
-    margin-bottom: 20px;
-    border: 1px solid black;
-    padding: 15px;
+    margin-bottom: 30px;
+    padding: 20px 30px 25px 40px;
+    border-radius: 5px;
+    border: 1px solid #252525;
 }
 
 .info {
@@ -87,12 +88,13 @@
 .titleValueInfo {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    font-weight: 600;
     color: #fff;
     line-height: 1.6;
 }
 
 .exactInfo {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .personalTitle {
@@ -101,3 +103,116 @@
     color: #fff;
     font-weight: 600;
 }
+
+.buttonContainer {
+    margin-top: 1rem;
+}
+
+.button {
+    display: inline-block;
+    line-height: 1.4;
+    border-radius: 35px;
+    white-space: nowrap;
+    transition: 250ms all ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    position: relative;
+    padding: 16px 70px 16px 35px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #ffb400;
+}
+
+.button:hover {
+    background: #ffb400;
+}
+
+.buttonText {
+    color: #fff;
+}
+
+.buttonIcon {
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    bottom: 0;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #ffb400;
+}
+
+.countValue {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffb400;
+}
+
+.countValue::after {
+    content: '+';
+    position: absolute;
+    right: -24px;
+    font-size: 33px;
+    font-weight: 300;
+    top: 2px;
+}
+
+.descriptionContainer {
+    position: relative;
+    padding-left: 45px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.descriptionContainer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 30px;
+    height: 1px;
+    background: #777;
+}
+
+.description {
+    display: block;
+}
+
+.horizontalLine {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    height: 5px;
+    width: 19px;
+    background: #fff;
+}
+
+.verticalLine {
+    display: block;
+    position: absolute;
+    top: 18px;
+    height: 10px;
+    width: 5px;
+    background: #fff;
+}
+
+.arrowBottom {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 7.5px 0 7.5px;
+    border-color: #fff transparent transparent transparent;
+}
+
