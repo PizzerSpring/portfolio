@@ -42,7 +42,6 @@
 }
 
 .personalContainer {
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     flex-basis: 50%;
@@ -50,7 +49,6 @@
 }
 
 .workContainer {
-    border: 1px solid black;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -66,7 +64,6 @@
 
 .info {
     line-height: 40px;
-    border: 1px solid black;
     padding: 30px;
     max-width: 50%;
 }
@@ -106,6 +103,9 @@
 
 .buttonContainer {
     margin-top: 1rem;
+    width: 100%;
+    padding-left: 25px;
+    margin-bottom: 25px;
 }
 
 .button {
@@ -215,4 +215,24 @@
     border-width: 8px 7.5px 0 7.5px;
     border-color: #fff transparent transparent transparent;
 }
+
+@media screen and (min-width: 576px){
+    .titleValueInfo {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 692px){
+    .personalContainer {
+        flex-basis: 100%;
+    }
+    .workContainer {
+        flex-basis: 100%;
+    }
+    .buttonContainer {
+        text-align: center;
+    }
+}
+
 
