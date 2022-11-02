@@ -26,16 +26,6 @@ const Aboutme = () => {
                             <li><span className={style.titleInfo}>Freelance : </span><span
                                 className={style.titleValueInfo}>Accessible</span></li>
                         </ul>
-                        {/*<div className={style.buttonContainer}>
-                            <a href="" className={style.button}>
-                                <span className={style.buttonText}>Download cv</span>
-                                <span className={style.buttonIcon}>
-                                    <span className={style.arrowBottom}></span>
-                                    <span className={style.horizontalLine}></span>
-                                    <span className={style.verticalLine}></span>
-                                </span>
-                            </a>
-                        </div>*/}
                     </div>
                     <div className={`${style.info} ${style.exactInfo}`}>
                         <ul className={style.listUnstyled}>

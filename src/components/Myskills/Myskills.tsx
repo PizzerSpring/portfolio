@@ -1,12 +1,12 @@
 import React from 'react';
-import style from './Myskills.module.css';
+import style from './Myskills.module.scss';
 import containerStyle from './../../commons/Container.module.css';
 import SkillsCard from "./SkillsCard";
 
 const Myskills = () => {
     return (
         <div className={style.mySkills}>
-            <h2 className={style.title}>MY SKILLS</h2>
+            <h3 className={style.title}>MY SKILLS</h3>
             <div className={containerStyle.container}>
                 <div>
                     <SkillsCard count={'80%'} title={'HTML'}/>
