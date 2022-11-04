@@ -1,4 +1,5 @@
 @import "../../commons/sass/variables";
+@import "../../commons/sass/mixins";
 
 .aboutMe {
   min-height: 100vh;
@@ -14,9 +15,7 @@
     position: relative;
 
     .title {
-      font-size: 56px;
-      font-weight: 900;
-      color: #fff;
+      @include textSizeWeightColor(56px, 900, $secondColor);
       text-align: center;
 
       span {
@@ -25,17 +24,14 @@
     }
 
     .titleBackground {
-      font-size: 110px;
+      @include text($fontFamilyMain, 110px, 800, rgba(255, 255, 255, 0.07), 0.7);
       left: 0;
       letter-spacing: 10px;
-      line-height: 0.7;
       position: absolute;
       right: 0;
       top: 50%;
       text-transform: uppercase;
-      font-weight: 800;
       transform: translateY(-50%);
-      color: rgba(255, 255, 255, 0.07);
       text-align: center;
     }
   }
@@ -54,9 +50,7 @@
 
     .personalTitle {
       padding-bottom: 22px;
-      font-size: 26px;
-      color: #fff;
-      font-weight: 600;
+      @include textSizeWeightColor(26px, 600, $secondColor);
     }
 
     .listUnstyled {
@@ -65,20 +59,15 @@
 
       li {
         .titleInfo {
-          font-family: 'Open Sans', sans-serif;
-          font-size: 15px;
-          font-weight: 500;
-          color: #fff;
-          line-height: 1.6;
+          @include text($fontFamilySecond, 15px, 500, $secondColor, 1.6);
           opacity: .8;
         }
 
         .titleValueInfo {
-          font-family: 'Open Sans', sans-serif;
-          font-size: 15px;
-          font-weight: 600;
-          color: #fff;
-          line-height: 1.6;
+          @include text($fontFamilySecond, 15px, 600, $secondColor, 1.6);
+          @media screen and (min-width: 576px) {
+              display: inline-block;
+          }
         }
       }
     }
@@ -97,7 +86,6 @@
 
     .button {
       display: inline-block;
-      line-height: 1.4;
       border-radius: 35px;
       white-space: nowrap;
       transition: 250ms all ease-in-out;
@@ -105,17 +93,15 @@
       text-decoration: none !important;
       position: relative;
       padding: 16px 70px 16px 35px;
-      font-size: 15px;
-      font-weight: 600;
-      color: #fff;
-      border: 1px solid #ffb400;
+      @include text($fontFamilyMain, 15px, 600, $secondColor, 1.4);
+      border: 1px solid $mainColor;
 
       &:hover {
-        background: #ffb400;
+        background: $mainColor;
       }
 
       .buttonText {
-        color: #fff;
+        color: $secondColor;
       }
 
       .buttonIcon {
@@ -129,9 +115,9 @@
         justify-content: center;
         align-items: center;
         font-size: 19px;
-        color: #ffffff;
+        color: $secondColor;
         border-radius: 50%;
-        background-color: #ffb400;
+        background-color: $mainColor;
 
         .horizontalLine {
           display: block;
@@ -140,7 +126,7 @@
           top: 30px;
           height: 5px;
           width: 19px;
-          background: #fff;
+          background: $secondColor;
         }
 
         .verticalLine {
@@ -149,7 +135,7 @@
           top: 18px;
           height: 10px;
           width: 5px;
-          background: #fff;
+          background: $secondColor;
         }
 
         .arrowBottom {
@@ -158,10 +144,16 @@
           height: 0;
           border-style: solid;
           border-width: 8px 7.5px 0 7.5px;
-          border-color: #fff transparent transparent transparent;
+          border-color: $secondColor transparent transparent transparent;
         }
       }
     }
+    @media screen and (max-width: 692px) {
+        text-align: center;
+    }
+  }
+  @media screen and (max-width: 692px) {
+      flex-basis: 100%;
   }
 }
 
@@ -178,20 +170,16 @@
     border: 1px solid #252525;
 
     .countValue {
-      font-family: 'Poppins', sans-serif;
+      @include text($fontFamilyMain, 50px, 700, $mainColor, 1.2);
       position: relative;
       display: inline-block;
       margin: 0;
-      font-size: 50px;
-      font-weight: 700;
-      color: #ffb400;
 
       &::after {
         content: '+';
         position: absolute;
         right: -24px;
-        font-size: 33px;
-        font-weight: 300;
+        @include textSizeWeightColor(33px, 300, $mainColor);
         top: 2px;
       }
     }
@@ -199,8 +187,8 @@
     .descriptionContainer {
       position: relative;
       padding-left: 45px;
-      font-family: 'Open Sans', sans-serif;
-      color: #fff;
+      font-family: $fontFamilySecond;
+      color: $secondColor;
 
       &::before {
         content: "";
@@ -218,25 +206,10 @@
 
     }
   }
-}
-
-@media screen and (min-width: 576px) {
-  .titleValueInfo {
-    display: inline-block;
-  }
-
-}
-
-@media screen and (max-width: 692px) {
-  .personalContainer {
-    flex-basis: 100%;
-  }
-  .workContainer {
-    flex-basis: 100%;
-  }
-  .buttonContainer {
-    text-align: center;
+  @media screen and (max-width: 692px) {
+      flex-basis: 100%;
   }
 }
+
 
 
