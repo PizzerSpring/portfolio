@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Experience.module.css';
+import style from './Experience.module.scss';
 import bgIconJs from './../../assets/images/js.png';
 
 type ExperienceCardPropsType = {

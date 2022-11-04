@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './Experience.module.css';
+import style from './Experience.module.scss';
 import containerStyle from './../../commons/Container.module.css';
 import ExperienceCard from "./ExperienceCard";
 
