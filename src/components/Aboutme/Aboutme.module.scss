@@ -1,238 +1,242 @@
 @import "../../commons/sass/variables";
 
 .aboutMe {
-    min-height: 100vh;
-    background: #111;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-}
+  min-height: 100vh;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
 
-.aboutMeTitle {
+  .aboutMeTitle {
     padding: 80px 0;
     position: relative;
-}
 
-.title {
-    font-size: 56px;
-    font-weight: 900;
-    color: #fff;
-    text-align: center;
-}
+    .title {
+      font-size: 56px;
+      font-weight: 900;
+      color: #fff;
+      text-align: center;
 
-.title span {
-    color: $mainColor;
-}
+      span {
+        color: $mainColor;
+      }
+    }
 
-.titleBackground {
-    font-size: 110px;
-    left: 0;
-    letter-spacing: 10px;
-    line-height: 0.7;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    text-transform: uppercase;
-    font-weight: 800;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.07);
-    text-align: center;
+    .titleBackground {
+      font-size: 110px;
+      left: 0;
+      letter-spacing: 10px;
+      line-height: 0.7;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      text-transform: uppercase;
+      font-weight: 800;
+      transform: translateY(-50%);
+      color: rgba(255, 255, 255, 0.07);
+      text-align: center;
+    }
+  }
 }
 
 .personalContainer {
-    display: flex;
-    justify-content: space-around;
-    flex-basis: 50%;
-    flex-wrap: wrap;
-}
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 50%;
+  flex-wrap: wrap;
 
-.workContainer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    flex-basis: 50%;
-}
-
-.card {
-    margin-bottom: 30px;
-    padding: 20px 30px 25px 40px;
-    border-radius: 5px;
-    border: 1px solid #252525;
-}
-
-.info {
+  .info {
     line-height: 40px;
     padding: 30px;
     max-width: 50%;
-}
 
-.listUnstyled {
-    padding-left: 0;
-    list-style: none;
-}
+    .personalTitle {
+      padding-bottom: 22px;
+      font-size: 26px;
+      color: #fff;
+      font-weight: 600;
+    }
 
-.titleInfo {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    color: #fff;
-    line-height: 1.6;
-    opacity: .8;
-}
+    .listUnstyled {
+      padding-left: 0;
+      list-style: none;
 
-.titleValueInfo {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.6;
-}
+      li {
+        .titleInfo {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 15px;
+          font-weight: 500;
+          color: #fff;
+          line-height: 1.6;
+          opacity: .8;
+        }
 
-.exactInfo {
+        .titleValueInfo {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 15px;
+          font-weight: 600;
+          color: #fff;
+          line-height: 1.6;
+        }
+      }
+    }
+
+  }
+
+  .exactInfo {
     margin-top: 60px;
-}
+  }
 
-.personalTitle {
-    padding-bottom: 22px;
-    font-size: 26px;
-    color: #fff;
-    font-weight: 600;
-}
-
-.buttonContainer {
+  .buttonContainer {
     margin-top: 1rem;
     width: 100%;
     padding-left: 25px;
     margin-bottom: 25px;
+
+    .button {
+      display: inline-block;
+      line-height: 1.4;
+      border-radius: 35px;
+      white-space: nowrap;
+      transition: 250ms all ease-in-out;
+      text-transform: uppercase;
+      text-decoration: none !important;
+      position: relative;
+      padding: 16px 70px 16px 35px;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      border: 1px solid #ffb400;
+
+      &:hover {
+        background: #ffb400;
+      }
+
+      .buttonText {
+        color: #fff;
+      }
+
+      .buttonIcon {
+        position: absolute;
+        right: -1px;
+        top: -1px;
+        bottom: 0;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19px;
+        color: #ffffff;
+        border-radius: 50%;
+        background-color: #ffb400;
+
+        .horizontalLine {
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 30px;
+          height: 5px;
+          width: 19px;
+          background: #fff;
+        }
+
+        .verticalLine {
+          display: block;
+          position: absolute;
+          top: 18px;
+          height: 10px;
+          width: 5px;
+          background: #fff;
+        }
+
+        .arrowBottom {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 8px 7.5px 0 7.5px;
+          border-color: #fff transparent transparent transparent;
+        }
+      }
+    }
+  }
 }
 
-.button {
+.workContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+
+  .card {
+    margin-bottom: 30px;
+    padding: 20px 30px 25px 40px;
+    border-radius: 5px;
+    border: 1px solid #252525;
+
+    .countValue {
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+      display: inline-block;
+      margin: 0;
+      font-size: 50px;
+      font-weight: 700;
+      color: #ffb400;
+
+      &::after {
+        content: '+';
+        position: absolute;
+        right: -24px;
+        font-size: 33px;
+        font-weight: 300;
+        top: 2px;
+      }
+    }
+
+    .descriptionContainer {
+      position: relative;
+      padding-left: 45px;
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 13px;
+        width: 30px;
+        height: 1px;
+        background: #777;
+      }
+
+      .description {
+        display: block;
+      }
+
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .titleValueInfo {
     display: inline-block;
-    line-height: 1.4;
-    border-radius: 35px;
-    white-space: nowrap;
-    transition: 250ms all ease-in-out;
-    text-transform: uppercase;
-    text-decoration: none !important;
-    position: relative;
-    padding: 16px 70px 16px 35px;
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
-    border: 1px solid #ffb400;
-}
-
-.button:hover {
-    background: #ffb400;
-}
-
-.buttonText {
-    color: #fff;
-}
-
-.buttonIcon {
-    position: absolute;
-    right: -1px;
-    top: -1px;
-    bottom: 0;
-    width: 55px;
-    height: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 19px;
-    color: #ffffff;
-    border-radius: 50%;
-    background-color: #ffb400;
-}
-
-.countValue {
-    font-family: 'Poppins', sans-serif;
-    position: relative;
-    display: inline-block;
-    margin: 0;
-    font-size: 50px;
-    font-weight: 700;
-    color: #ffb400;
-}
-
-.countValue::after {
-    content: '+';
-    position: absolute;
-    right: -24px;
-    font-size: 33px;
-    font-weight: 300;
-    top: 2px;
-}
-
-.descriptionContainer {
-    position: relative;
-    padding-left: 45px;
-    font-family: 'Open Sans', sans-serif;
-    color: #fff;
-}
-
-.descriptionContainer::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 13px;
-    width: 30px;
-    height: 1px;
-    background: #777;
-}
-
-.description {
-    display: block;
-}
-
-.horizontalLine {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 30px;
-    height: 5px;
-    width: 19px;
-    background: #fff;
-}
-
-.verticalLine {
-    display: block;
-    position: absolute;
-    top: 18px;
-    height: 10px;
-    width: 5px;
-    background: #fff;
-}
-
-.arrowBottom {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 8px 7.5px 0 7.5px;
-    border-color: #fff transparent transparent transparent;
-}
-
-@media screen and (min-width: 576px){
-    .titleValueInfo {
-        display: inline-block;
-    }
+  }
 
 }
 
-@media screen and (max-width: 692px){
-    .personalContainer {
-        flex-basis: 100%;
-    }
-    .workContainer {
-        flex-basis: 100%;
-    }
-    .buttonContainer {
-        text-align: center;
-    }
+@media screen and (max-width: 692px) {
+  .personalContainer {
+    flex-basis: 100%;
+  }
+  .workContainer {
+    flex-basis: 100%;
+  }
+  .buttonContainer {
+    text-align: center;
+  }
 }
 
 
