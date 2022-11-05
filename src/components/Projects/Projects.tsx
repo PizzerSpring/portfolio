@@ -32,14 +32,6 @@ const Projects = () => {
                 <div>
                     <ProjectsCard style={cosmeticsStore} address={''} title={'Online cosmetics store'} description={'Online store of professional cosmetics.'}/>
                 </div>
-                {/*<div>
-                    <ProjectsCard style={cosmeticsStore} address={''} title={'Online cosmetics store'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
-                    <ProjectsCard style={trello} address={''} title={'Trello analogue'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
-                </div>
-                <div>
-                    <ProjectsCard style={cosmeticsStore} address={''} title={'Online cosmetics store'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
-                    <ProjectsCard style={trello} address={''} title={'Trello analogue'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
-                </div>*/}
             </div>
         </div>
     );

@@ -2,152 +2,122 @@
 @import "../../commons/sass/mixins";
 
 .projects {
-    min-height: 100vh;
-    background: $bgColor;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+  min-height: 100vh;
+  background: $bgColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-.flexStartContainer {
-    align-items: flex-start;
-}
-
-.titleContainer {
+  .titleContainer {
     position: relative;
     text-align: center;
     padding: 80px 0;
-}
 
-.title {
-    font-family: 'Poppins', sans-serif;
-    font-size: 56px;
-    font-weight: 900;
-    color: #fff;
-    line-height: 1.2;
-    text-transform: uppercase;
-    margin: 0;
-    text-align: center;
-}
+    .title {
+      @include text($fontFamilyMain, 56px, 900, #fff, 1.2);
+      text-transform: uppercase;
+      margin: 0;
+      text-align: center;
 
-.title span {
-    color: $mainColor;
-}
+      span {
+        color: $mainColor;
+      }
+    }
 
-.titleBg {
-    font-size: 110px;
-    left: 0;
-    letter-spacing: 10px;
-    line-height: 0.7;
-    position: absolute;
-    right: 0;
-    top: 45%;
-    text-transform: uppercase;
-    font-weight: 800;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.07);
-}
+    .titleBg {
+      @include text($fontFamilyMain, 110px, 800, rgba(255, 255, 255, 0.07), 0.7);
+      left: 0;
+      letter-spacing: 10px;
+      position: absolute;
+      right: 0;
+      top: 45%;
+      text-transform: uppercase;
+      transform: translateY(-50%);
+    }
+  }
 
-.element {
-    width: 450px;
-    background: rgba(255, 255, 255, 0.07);;
-    border-radius: 5px;
-    margin: 20px;
-}
+  .flexStartContainer {
+    align-items: flex-start;
 
-.image {
-    height: 300px;
-    background: #d6d6d6;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+    .element {
+      width: 450px;
+      background: rgba(255, 255, 255, 0.07);;
+      border-radius: 5px;
+      margin: 20px;
 
-.image::before {
-    position: absolute;
-    content: '';
-    background: black;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.4;
-}
+      .image {
+        height: 300px;
+        background: #d6d6d6;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
 
-.viewButton {
-    position: relative;
-    z-index: 1;
-    display: inline-block;
-    border-radius: 35px;
-    transition: 250ms all ease-in-out;
-    text-transform: uppercase;
-    text-decoration: none !important;
-    padding: 16px 35px 16px 35px;
-    @include text($fontFamilyMain, 15px, 600, $secondColor, 1.4);
-    border: 2px solid $mainColor;
-    background: transparent;
-}
+        &::before {
+          position: absolute;
+          content: '';
+          background: black;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          opacity: 0.4;
+        }
 
-.viewButton:hover {
-    background: #ffb400;
-}
+        .viewButton {
+          position: relative;
+          z-index: 1;
+          display: inline-block;
+          border-radius: 35px;
+          transition: 250ms all ease-in-out;
+          text-transform: uppercase;
+          text-decoration: none !important;
+          padding: 16px 35px 16px 35px;
+          @include text($fontFamilyMain, 15px, 600, $secondColor, 1.4);
+          border: 2px solid $mainColor;
+          background: transparent;
 
-.projectInfo {
-    padding: 25px 20px;
-}
+          &:hover {
+            background: $mainColor;
+          }
+        }
+      }
 
-.projectTitle {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 0 0 5px;
-    line-height: 1.2;
-    color: #fff;
-}
+      .projectInfo {
+        padding: 25px 20px;
 
-.description {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    color: #eee;
-}
+        .projectTitle {
+          @include text($fontFamilyMain, 16px, 600, $secondColor, 1.2);
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          margin: 0 0 5px;
+        }
 
-@media screen and (max-width: 3024px) {
-    .flexStartContainer {
+        .description {
+          @include textFamilySizeWeightColor($fontFamilySecond, 14px, 500, #eee);
+        }
+      }
+      @media screen and (max-width: 1224px) {
+          width: 700px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 500px;
+      }
+      @media screen and (max-width: 576px) {
+        width: 400px;
+      }
+      @media screen and (max-width: 476px) {
+        width: 300px;
+      }
+      @media screen and (max-width: 300px) {
+        width: 200px;
+      }
+    }
+    @media screen and (max-width: 3024px) {
         justify-content: center;
     }
+  }
 }
 
-@media screen and (max-width: 1224px) {
-    .element {
-        width: 700px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .element {
-        width: 500px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .element {
-        width: 400px;
-    }
-}
-
-@media screen and (max-width: 476px) {
-   .element {
-       width: 300px;
-   }
-}
-
-@media screen and (max-width: 300px) {
-    .element {
-        width: 200px;
-    }
-}
