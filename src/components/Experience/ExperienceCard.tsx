@@ -7,23 +7,15 @@ type ExperienceCardPropsType = {
     title: string
     description: string
     theme: string
+    style: {}
 }
 
 const ExperienceCard = (props: ExperienceCardPropsType) => {
 
-    const styleIcon = {
-        backgroundImage: `url(${bgIconJs})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        width: '16px',
-        height: '16px',
-    }
-
     return (
         <div className={style.education}>
             <div className={style.icon}>
-                <span style={styleIcon} className={style.fa}>
+                <span style={props.style} className={style.fa}>
                 </span>
             </div>
             <span className={style.time}>{props.story}</span>
