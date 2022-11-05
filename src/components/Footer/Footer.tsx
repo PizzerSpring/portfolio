@@ -60,21 +60,21 @@ const Footer = () => {
                 <div className={style.form}>
                     <form action="">
                         <div className={style.inputsContainer}>
-                            <div>
+                            <div className={style.elementInput}>
                                 <input className={style.input} placeholder='YOUR NAME' type="text"/>
                             </div>
-                            <div>
-                                <input placeholder='YOUR EMAIL' type="email"/>
+                            <div className={style.elementInput}>
+                                <input className={style.input} placeholder='YOUR EMAIL' type="email"/>
                             </div>
-                            <div>
-                                <input placeholder='YOUR SUBJECT' type="text"/>
+                            <div className={style.elementInput}>
+                                <input className={style.input} placeholder='YOUR SUBJECT' type="text"/>
                             </div>
                         </div>
                         <div>
                             <textarea placeholder='YOUR MESSAGE' name="" id="" className={style.textarea}></textarea>
-                            <button>:before
-                                <span></span>
-                                <span>:before</span>
+                            <button className={style.button}>
+                                <span className={style.buttonText}>send message</span>
+                                <span className={style.buttonIcon}></span>
                             </button>
                         </div>
                         <div>
