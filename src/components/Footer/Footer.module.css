@@ -1,31 +1,92 @@
 .footer {
     min-height: 100vh;
-    background: #FFDEAD;
+    background: #111;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 85px;
 }
 .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: 900;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
     text-align: center;
-    margin-bottom: 50px;
+}
+
+.title span {
+    font-size: 56px;
+    font-weight: 900;
+    color: #ffb400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.titleBg {
+    font-family: 'Poppins', sans-serif;
+    font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.07);
 }
 
 .textTitle {
-    padding: 20px 0 0 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+.titleContainer {
+    position: relative;
+    text-align: center;
+    padding: 80px 0;
 }
 
 .yellowIcons {
+    display: inline-block;
     width: 50px;
     height: 50px;
     border: 1px solid black;
-    background: #FFFFFF;
-    margin: 0 30px 30px 0;
+    background: #ffb400;
+    position: absolute;
+    color: #ffb400;
+    left: 0;
+    font-size: 33px;
 }
 .yellowIconsContainer {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
-    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-left: 70px;
+    line-height: 21px;
+    color:#fff;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.yellowIconsContainer p p {
+    text-transform: uppercase;
+    opacity: .8;
+    font-weight: 400;
+    display: block !important;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 21px;
+    padding-top: 5px;
+    margin-bottom: 10px;
 }
 .socialIcons {
     width: 50px;
@@ -39,11 +100,33 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    border: 1px solid black;
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+.socialIconsContainer ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 100%;
+}
+
+.socialIconsContainer ul li {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #252525;
 }
 
 .text {
-    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+
 }
 
 .form {

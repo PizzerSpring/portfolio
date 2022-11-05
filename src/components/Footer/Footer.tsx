@@ -5,46 +5,80 @@ import containerStyle from './../../commons/Container.module.css';
 const Footer = () => {
     return (
         <div className={style.footer}>
-            <h2 className={style.title}>GET IN TOUCH</h2>
+            <div className={style.titleContainer}>
+                <h2 className={style.title}>GET IN
+                    <span> TOUCH</span>
+                </h2>
+                <span className={style.titleBg}>Contact</span>
+            </div>
             <div className={containerStyle.container}>
                 <div>
                     <h3 className={style.textTitle}>DON'T BE SHY !</h3>
                     <p className={style.text}>
-                        Feel free to get in touch with me. I am always<br/> open to discussing new projects, creative ideas or<br/> opportunities to be part of your visions.
+                        Feel free to get in touch with me. I am always<br/> open to discussing new projects, creative
+                        ideas or<br/> opportunities to be part of your visions.
                     </p>
-                    <div className={style.yellowIconsContainer}>
-                        <div className={style.yellowIcons}></div>
-                        <div>
+                    <p className={style.yellowIconsContainer}>
+                        <p className={style.yellowIcons}></p>
+                        <p>
                             <p>MAIL ME</p>
                             <span>vladislav9646@gmail.com</span>
-                        </div>
-                    </div>
-                    <div className={style.yellowIconsContainer}>
-                        <div className={style.yellowIcons}></div>
-                        <div>
-                            <p>CALL ME</p>
-                            <span>+7 961 860 05 12</span>
-                        </div>
-                    </div>
+                        </p>
+                    </p>
+                    <p className={style.yellowIconsContainer}>
+                        <p className={style.yellowIcons}></p>
+                        <p>
+                            <p> CALL ME</p>
+                            <span> +7 961 860 05 12</span>
+                        </p>
+                    </p>
                     <div className={style.socialIconsContainer}>
-                        <div className={style.socialIcons}></div>
-                        <div className={style.socialIcons}></div>
-                        <div className={style.socialIcons}></div>
-                        <div className={style.socialIcons}></div>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span></span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div className={style.form}>
                     <form action="">
                         <div className={style.inputsContainer}>
-                            <input className={style.input} placeholder='YOUR NAME' type="text"/>
-                            <input placeholder='YOUR EMAIL' type="email"/>
-                            <input placeholder='YOUR SUBJECT' type="text"/>
+                            <div>
+                                <input className={style.input} placeholder='YOUR NAME' type="text"/>
+                            </div>
+                            <div>
+                                <input placeholder='YOUR EMAIL' type="email"/>
+                            </div>
+                            <div>
+                                <input placeholder='YOUR SUBJECT' type="text"/>
+                            </div>
                         </div>
                         <div>
                             <textarea placeholder='YOUR MESSAGE' name="" id="" className={style.textarea}></textarea>
+                            <button>:before
+                                <span></span>
+                                <span>:before</span>
+                            </button>
                         </div>
                         <div>
-                            <a href="">SEND MESSAGE</a>
+                            <span></span>
                         </div>
                     </form>
                 </div>
