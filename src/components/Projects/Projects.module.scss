@@ -9,6 +9,10 @@
     justify-content: center;
 }
 
+.flexStartContainer {
+    align-items: flex-start;
+}
+
 .titleContainer {
     position: relative;
     text-align: center;
@@ -45,15 +49,17 @@
 }
 
 .element {
-    width: 300px;
-    background: #111;
-    border: 1px solid black;
+    width: 450px;
+    background: rgba(255, 255, 255, 0.07);;
+    border-radius: 5px;
     margin: 20px;
 }
 
 .image {
     height: 300px;
     background: #d6d6d6;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,10 +78,21 @@
 }
 
 .viewButton {
-    background: #eeeef5;
-    padding: 10px 20px;
     position: relative;
     z-index: 1;
+    display: inline-block;
+    border-radius: 35px;
+    transition: 250ms all ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    padding: 16px 35px 16px 35px;
+    @include text($fontFamilyMain, 15px, 600, $secondColor, 1.4);
+    border: 2px solid $mainColor;
+    background: transparent;
+}
+
+.viewButton:hover {
+    background: #ffb400;
 }
 
 .projectInfo {
@@ -83,15 +100,54 @@
 }
 
 .projectTitle {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
+    text-transform: uppercase;
     margin: 0 0 5px;
     line-height: 1.2;
     color: #fff;
-
 }
 
 .description {
-    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #eee;
+}
+
+@media screen and (max-width: 3024px) {
+    .flexStartContainer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1224px) {
+    .element {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .element {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .element {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+   .element {
+       width: 300px;
+   }
+}
+
+@media screen and (max-width: 300px) {
+    .element {
+        width: 200px;
+    }
 }

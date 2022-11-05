@@ -7,7 +7,7 @@ const Myskills = () => {
     return (
         <div className={style.mySkills}>
             <h3 className={style.title}>MY SKILLS</h3>
-            <div className={containerStyle.container}>
+            <div className={`${containerStyle.container} ${style.justifyCenterContainer}`}>
                 <div>
                     <SkillsCard count={'80'} title={'HTML'}/>
                     <SkillsCard count={'60'} title={'CSS'}/>

@@ -25,19 +25,21 @@ const Projects = () => {
                 </h2>
                 <span className={style.titleBg}>WORKS</span>
             </div>
-            <div className={containerStyle.container}>
+            <div className={`${containerStyle.container} ${style.flexStartContainer}`}>
                 <div>
-                    <ProjectsCard style={trello} address={''} title={'Online cosmetics store'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
-                    <ProjectsCard style={cosmeticsStore} address={''} title={'Trello analogue'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
+                    <ProjectsCard style={trello} address={''} title={'Trello analogue'} description={'Trello helps bring all employees, tasks, and tools together in one place.'}/>
                 </div>
                 <div>
-                    <ProjectsCard style={trello} address={''} title={'Online cosmetics store'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
-                    <ProjectsCard style={cosmeticsStore} address={''} title={'Trello analogue'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
+                    <ProjectsCard style={cosmeticsStore} address={''} title={'Online cosmetics store'} description={'Online store of professional cosmetics.'}/>
+                </div>
+                {/*<div>
+                    <ProjectsCard style={cosmeticsStore} address={''} title={'Online cosmetics store'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
+                    <ProjectsCard style={trello} address={''} title={'Trello analogue'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
                 </div>
                 <div>
-                    <ProjectsCard style={trello} address={''} title={'Online cosmetics store'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
-                    <ProjectsCard style={cosmeticsStore} address={''} title={'Trello analogue'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
-                </div>
+                    <ProjectsCard style={cosmeticsStore} address={''} title={'Online cosmetics store'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
+                    <ProjectsCard style={trello} address={''} title={'Trello analogue'} description={'Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,'}/>
+                </div>*/}
             </div>
         </div>
     );

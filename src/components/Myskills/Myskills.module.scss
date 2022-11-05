@@ -13,6 +13,11 @@
     text-align: center;
     margin-bottom: 50px;
   }
+  .justifyCenterContainer {
+    @media screen and (max-width: 576px){
+      justify-content: center;
+    }
+  }
 }
 
 .skillCard {
