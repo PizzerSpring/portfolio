@@ -11,12 +11,12 @@ const Footer = () => {
                 </h2>
                 <span className={style.titleBg}>Contact</span>
             </div>
-            <div className={containerStyle.container}>
+            <div className={`${containerStyle.container} ${style.descriptionForm}`}>
                 <div>
                     <h3 className={style.textTitle}>DON'T BE SHY !</h3>
                     <p className={style.text}>
-                        Feel free to get in touch with me. I am always<br/> open to discussing new projects, creative
-                        ideas or<br/> opportunities to be part of your visions.
+                        Feel free to get in touch with me. I am always open to discussing new projects, creative
+                        ideas or opportunities to be part of your visions.
                     </p>
                     <p className={style.yellowIconsContainer}>
                         <p className={style.yellowIcons}></p>
