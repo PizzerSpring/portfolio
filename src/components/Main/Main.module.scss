@@ -117,18 +117,6 @@
           height: 55px;
           border-radius: 50%;
           background-color: $mainColor;
-
-          .longArrow {
-            @include transformArrow(block, 18px, 4px, 5px, $secondColor, translate(18px, 24px));
-          }
-
-          .longArrowT {
-            @include transformArrow(block, 14px, 5px, 5px, $secondColor, rotate(45deg) translate(26px, -6px));
-          }
-
-          .longArrowB {
-            @include transformArrow(block, 14px, 5px, 5px, $secondColor, rotate(-45deg) translate(2px, 30px));
-          }
         }
       }
     }

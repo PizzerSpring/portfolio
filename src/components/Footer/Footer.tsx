@@ -1,8 +1,50 @@
 import React from 'react';
 import style from './Footer.module.scss';
 import containerStyle from './../../commons/Container.module.css';
+import telegramIcon from './../../assets/images/telegram.png';
+import facebookIcon from "../../assets/images/facebook.png";
+import twitterIcon from "../../assets/images/twitter.png";
+import youtubeIcon from "../../assets/images/youtube.png";
+import pinterestIcon from "../../assets/images/pinterest.png";
+import mailmeIcon from "../../assets/images/mailme.png";
+import callmeIcon from "../../assets/images/callme.png";
 
 const Footer = () => {
+    const telegram = {
+        backgroundImage: `url(${telegramIcon})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
+    const facebook = {
+        backgroundImage: `url(${facebookIcon})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
+    const twitter = {
+        backgroundImage: `url(${twitterIcon})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
+    const youtube = {
+        backgroundImage: `url(${youtubeIcon})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
+    const pinterest = {
+        backgroundImage: `url(${pinterestIcon})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
+    const mailMe = {
+        backgroundImage: `url(${mailmeIcon})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
+    const callMe = {
+        backgroundImage: `url(${callmeIcon})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
     return (
         <div className={style.footer}>
             <div className={style.titleContainer}>
@@ -19,14 +61,14 @@ const Footer = () => {
                         ideas or opportunities to be part of your visions.
                     </p>
                     <p className={style.yellowIconsContainer}>
-                        <p className={style.yellowIcons}></p>
+                        <p style={mailMe} className={style.yellowIcons}></p>
                         <p>
                             <p>MAIL ME</p>
                             <span>vladislav9646@gmail.com</span>
                         </p>
                     </p>
                     <p className={style.yellowIconsContainer}>
-                        <p className={style.yellowIcons}></p>
+                        <p style={callMe} className={style.yellowIcons}></p>
                         <p>
                             <p> CALL ME</p>
                             <span> +7 961 860 05 12</span>
@@ -34,22 +76,22 @@ const Footer = () => {
                     </p>
                     <div className={style.socialIconsContainer}>
                         <ul>
-                            <li>
+                            <li style={facebook}>
                                 <a href="">
                                     <span></span>
                                 </a>
                             </li>
-                            <li>
+                            <li style={twitter}>
                                 <a href="">
                                     <span></span>
                                 </a>
                             </li>
-                            <li>
+                            <li style={youtube}>
                                 <a href="">
                                     <span></span>
                                 </a>
                             </li>
-                            <li>
+                            <li style={pinterest}>
                                 <a href="">
                                     <span></span>
                                 </a>
@@ -74,7 +116,7 @@ const Footer = () => {
                             <textarea placeholder='YOUR MESSAGE' name="" id="" className={style.textarea}></textarea>
                             <button className={style.button}>
                                 <span className={style.buttonText}>send message</span>
-                                <span className={style.buttonIcon}></span>
+                                <span className={style.buttonIcon} style={telegram}></span>
                             </button>
                         </div>
                         <div>

@@ -1,8 +1,14 @@
 import React from 'react';
 import style from './Main.module.scss';
 import Navigation from "../Navigation/Navigation";
+import arrowIcon from "./../../assets/images/arrowHome.png";
 
 const Main = () => {
+    const arrow = {
+        backgroundImage: `url(${arrowIcon})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
     return (
         <main className={style.mainContainer}>
             <div className={style.frame}></div>
@@ -18,10 +24,7 @@ const Main = () => {
                         great software that will improve the lives of those around you.</p>
                     <a className={style.buttonAboutMe} href="">
                         <span className={style.buttonAboutMeText}>MORE ABOUT ME</span>
-                        <span className={style.buttonAboutMeIcon}>
-                          <span className={style.longArrow}></span>
-                          <span className={style.longArrowT}></span>
-                          <span className={style.longArrowB}></span>
+                        <span style={arrow} className={style.buttonAboutMeIcon}>
                         </span>
                     </a>
                 </div>

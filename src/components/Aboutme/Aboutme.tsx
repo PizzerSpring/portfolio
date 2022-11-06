@@ -2,8 +2,15 @@ import React from 'react';
 import style from './Aboutme.module.scss';
 import containerStyle from './../../commons/Container.module.css';
 import AboutMeCard from "./AboutMeCard";
+import downloadIcon from '../../assets/images/download.png';
+import arrowIcon from "../../assets/images/arrowHome.png";
 
 const Aboutme = () => {
+    const download = {
+        backgroundImage: `url(${downloadIcon})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
     return (
         <div className={style.aboutMe}>
             <div className={style.aboutMeTitle}>
@@ -54,10 +61,7 @@ const Aboutme = () => {
                     <div className={style.buttonContainer}>
                         <a href="" className={style.button}>
                             <span className={style.buttonText}>Download cv</span>
-                            <span className={style.buttonIcon}>
-                                    <span className={style.arrowBottom}></span>
-                                    <span className={style.horizontalLine}></span>
-                                    <span className={style.verticalLine}></span>
+                            <span className={style.buttonIcon} style={download}>
                             </span>
                         </a>
                     </div>
