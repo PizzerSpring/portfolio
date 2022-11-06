@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Aboutme.module.scss';
 import containerStyle from './../../commons/Container.module.css';
+import separatorStyle from './../../commons/Separator.module.scss';
 import AboutMeCard from "./AboutMeCard";
 import downloadIcon from '../../assets/images/download.png';
 import arrowIcon from "../../assets/images/arrowHome.png";
@@ -77,6 +78,7 @@ const Aboutme = () => {
                     </div>
                 </div>
             </div>
+            <hr className={separatorStyle.separator}/>
         </div>
     );
 };

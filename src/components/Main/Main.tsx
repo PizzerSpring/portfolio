@@ -31,6 +31,7 @@ const Main = () => {
                 <Navigation/>
             </div>
         </main>
+
     );
 };
 

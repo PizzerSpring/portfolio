@@ -8,6 +8,7 @@ import bgIconHTML from './../../assets/images/html.png';
 import bgIconReact from './../../assets/images/reactjs.png';
 import bgIconTS from './../../assets/images/typescript.png';
 import bgIconRedux from './../../assets/images/redux.png';
+import separatorStyle from "../../commons/Separator.module.scss";
 
 const Experience = () => {
 
@@ -75,6 +76,7 @@ const Experience = () => {
                     <ExperienceCard style={styleIconRedux} story={'2022'} title={'REACT DEVELOPER '} description={`I'm also learning how Redux works. And I try to introduce modern libraries into projects. For example "formic".`} theme={'Redux'}/>
                 </div>
             </div>
+            <hr className={separatorStyle.separator}/>
         </div>
     );
 };

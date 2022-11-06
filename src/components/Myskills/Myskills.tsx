@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Myskills.module.scss';
 import containerStyle from './../../commons/Container.module.css';
 import SkillsCard from "./SkillsCard";
+import separatorStyle from "../../commons/Separator.module.scss";
 
 const Myskills = () => {
     return (
@@ -25,6 +26,7 @@ const Myskills = () => {
                     <SkillsCard count={'5'} title={'PHP'}/>
                 </div>
             </div>
+            <hr className={separatorStyle.separator}/>
         </div>
     );
 };

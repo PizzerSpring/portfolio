@@ -4,6 +4,7 @@ import containerStyle from './../../commons/Container.module.css';
 import ProjectsCard from "./ProjectsCard";
 import trelloImage from './../../assets/images/trello.png';
 import cosmeticsStoreImage from './../../assets/images/cosmeticsstore.png';
+import separatorStyle from "../../commons/Separator.module.scss";
 
 const Projects = () => {
     const trello = {
@@ -33,6 +34,7 @@ const Projects = () => {
                     <ProjectsCard style={cosmeticsStore} address={''} title={'Online cosmetics store'} description={'Online store of professional cosmetics.'}/>
                 </div>
             </div>
+            <hr className={separatorStyle.separator}/>
         </div>
     );
 };
