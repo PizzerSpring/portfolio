@@ -22,7 +22,7 @@ const Main = () => {
                         creating an interface for user interaction. I am using the react framework. I'm passionate about
                         creating
                         great software that will improve the lives of those around you.</p>
-                    <a className={style.buttonAboutMe} href="">
+                    <a className={style.buttonAboutMe} href="#aboutMe">
                         <span className={style.buttonAboutMeText}>MORE ABOUT ME</span>
                         <span style={arrow} className={style.buttonAboutMeIcon}>
                         </span>

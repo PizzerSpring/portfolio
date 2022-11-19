@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './Navigation.module.scss';
 import homeIcon from '../../assets/images/main.png';
 import aboutMeIcon from '../../assets/images/aboutme.png';
 import portfolioIcon from '../../assets/images/portfolio.png';
 import contactIcon from '../../assets/images/contact.png';
+import {isVisible} from "@testing-library/user-event/dist/utils";
 
 
 const Navigation = () => {
+    const [isMenu, setMenu] = useState<boolean>(false)
     const home = {
         backgroundImage: `url(${homeIcon})`,
         backgroundRepeat: 'no-repeat',
@@ -27,6 +29,8 @@ const Navigation = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     }
+
+
     return (
         <>
             <nav className={style.navigation}>
@@ -54,14 +58,17 @@ const Navigation = () => {
 
             <div>
                 <div className={style.hamburgerMenu}>
-                    <input id="menu__toggle" className={style.menuToggle} type="checkbox"/>
+                    {/*<input id="menu__toggle" className={style.menuToggle} type="checkbox"/>
                     <label className={style.menuBtn} htmlFor="menu__toggle">
                         <span></span>
-                    </label>
-                    <ul className={style.menuBox}>
+                    </label>*/}
+                    <button className={`${style.menuBtn} ${isMenu ? style.menuBtnActive : ''}`} onClick={() =>  {
+                        console.log(isMenu)
+                        setMenu(!isMenu)}}><span></span></button>
+                    <ul className={`${style.menuBox} ${isMenu ? style.menuActive : ''}`}>
                         <li><a className={style.menuItem} href="#home">Home</a></li>
                         <hr className={style.separator}/>
-                        <li><a className={style.menuItem} href="#aboutMe">About me</a></li>
+                        <li><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#aboutMe">About me</a></li>
                         <hr className={style.separator}/>
                         <li><a className={style.menuItem} href="#mySkills">My skills</a></li>
                         <hr className={style.separator}/>
