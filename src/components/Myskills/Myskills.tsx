@@ -6,7 +6,7 @@ import separatorStyle from "../../commons/Separator.module.scss";
 
 const Myskills = () => {
     return (
-        <div className={style.mySkills}>
+        <div className={style.mySkills} id="mySkills">
             <h3 className={style.title}>MY SKILLS</h3>
             <div className={`${containerStyle.container} ${style.justifyCenterContainer}`}>
                 <div>

@@ -13,7 +13,7 @@ const Aboutme = () => {
         backgroundPosition: 'center',
     }
     return (
-        <div className={style.aboutMe}>
+        <div id="aboutMe" className={style.aboutMe}>
             <div className={style.aboutMeTitle}>
                 <h2 className={style.title}>ABOUT <span>ME</span></h2>
                 <span className={style.titleBackground}>Resume</span>

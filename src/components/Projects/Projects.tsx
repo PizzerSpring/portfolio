@@ -18,7 +18,7 @@ const Projects = () => {
         backgroundRepeat: 'no-repeat',
     }
     return (
-        <div className={style.projects}>
+        <div className={style.projects} id="portfolio">
             <div className={style.titleContainer}>
                 <h2 className={style.title}>
                     MY

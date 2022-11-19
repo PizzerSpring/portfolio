@@ -62,7 +62,7 @@ const Experience = () => {
     }
 
     return (
-        <div className={style.experience}>
+        <div className={style.experience} id="experience">
             <h3 className={style.title}>EXPERIENCE <span>&</span> EDUCATION</h3>
             <div className={containerStyle.container}>
                 <div>

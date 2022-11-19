@@ -10,7 +10,7 @@ const Main = () => {
         backgroundPosition: 'center',
     }
     return (
-        <main className={style.mainContainer}>
+        <main className={style.mainContainer} id="home">
             <div className={style.frame}></div>
             <div className={style.textPhoto}>
                 <div className={style.photo}></div>

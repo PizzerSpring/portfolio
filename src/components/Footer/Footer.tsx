@@ -46,7 +46,7 @@ const Footer = () => {
         backgroundPosition: 'center',
     }
     return (
-        <footer className={style.footer}>
+        <footer className={style.footer} id="footer">
             <div className={style.titleContainer}>
                 <h2 className={style.title}>GET IN
                     <span> TOUCH</span>
