@@ -28,28 +28,53 @@ const Navigation = () => {
         backgroundPosition: 'center',
     }
     return (
-        <nav className={style.navigation}>
-            <ul>
-                <li style={home} className={style.imgLinks}>
-                    <a className={style.link} href="#home"></a>
-                </li>
-                <li style={aboutMe} className={style.imgLinks}>
-                    <a className={style.link} href="#aboutMe"></a>
-                </li>
-                <li className={style.imgLinks}>
-                    <a className={`${style.icon} ${style.link}`} href="#mySkills">S</a>
-                </li>
-                <li className={style.imgLinks}>
-                    <a className={`${style.link} ${style.icon}`} href="#experience">E</a>
-                </li>
-                <li style={portfolio} className={style.imgLinks}>
-                    <a className={style.link} href="#portfolio"></a>
-                </li>
-                <li style={contact} className={style.imgLinks}>
-                    <a className={style.link} href="#footer"></a>
-                </li>
-            </ul>
-        </nav>
+        <>
+            <nav className={style.navigation}>
+                <ul>
+                    <li style={home} className={style.imgLinks}>
+                        <a className={style.link} href="#home"></a>
+                    </li>
+                    <li style={aboutMe} className={style.imgLinks}>
+                        <a className={style.link} href="#aboutMe"></a>
+                    </li>
+                    <li className={style.imgLinks}>
+                        <a className={`${style.icon} ${style.link}`} href="#mySkills">S</a>
+                    </li>
+                    <li className={style.imgLinks}>
+                        <a className={`${style.link} ${style.icon}`} href="#experience">E</a>
+                    </li>
+                    <li style={portfolio} className={style.imgLinks}>
+                        <a className={style.link} href="#portfolio"></a>
+                    </li>
+                    <li style={contact} className={style.imgLinks}>
+                        <a className={style.link} href="#footer"></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div>
+                <div className={style.hamburgerMenu}>
+                    <input id="menu__toggle" className={style.menuToggle} type="checkbox"/>
+                    <label className={style.menuBtn} htmlFor="menu__toggle">
+                        <span></span>
+                    </label>
+                    <ul className={style.menuBox}>
+                        <li><a className={style.menuItem} href="#home">Home</a></li>
+                        <hr className={style.separator}/>
+                        <li><a className={style.menuItem} href="#aboutMe">About me</a></li>
+                        <hr className={style.separator}/>
+                        <li><a className={style.menuItem} href="#mySkills">My skills</a></li>
+                        <hr className={style.separator}/>
+                        <li><a className={style.menuItem} href="#experience">Experience</a></li>
+                        <hr className={style.separator}/>
+                        <li><a className={style.menuItem} href="#portfolio">Portfolio</a></li>
+                        <hr className={style.separator}/>
+                        <li><a className={style.menuItem} href="#footer">Get in touch</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </>
     );
 };
 
