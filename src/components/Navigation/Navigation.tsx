@@ -4,7 +4,7 @@ import homeIcon from '../../assets/images/main.png';
 import aboutMeIcon from '../../assets/images/aboutme.png';
 import portfolioIcon from '../../assets/images/portfolio.png';
 import contactIcon from '../../assets/images/contact.png';
-import {isVisible} from "@testing-library/user-event/dist/utils";
+import expIcon from '../../assets/images/exp.png';
 
 
 const Navigation = () => {
@@ -16,6 +16,11 @@ const Navigation = () => {
     }
     const aboutMe = {
         backgroundImage: `url(${aboutMeIcon})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
+    const exp = {
+        backgroundImage: `url(${expIcon})`,
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     }
@@ -58,25 +63,19 @@ const Navigation = () => {
 
             <div>
                 <div className={style.hamburgerMenu}>
-                    {/*<input id="menu__toggle" className={style.menuToggle} type="checkbox"/>
-                    <label className={style.menuBtn} htmlFor="menu__toggle">
-                        <span></span>
-                    </label>*/}
-                    <button className={`${style.menuBtn} ${isMenu ? style.menuBtnActive : ''}`} onClick={() =>  {
-                        console.log(isMenu)
-                        setMenu(!isMenu)}}><span></span></button>
+                    <button className={`${style.menuBtn} ${isMenu ? style.menuBtnActive : ''}`} onClick={() =>  {setMenu(!isMenu)}}><span></span></button>
                     <ul className={`${style.menuBox} ${isMenu ? style.menuActive : ''}`}>
-                        <li><a className={style.menuItem} href="#home">Home</a></li>
+                        <li><span className={style.iconLink} style={home}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#home">Home</a></li>
                         <hr className={style.separator}/>
-                        <li><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#aboutMe">About me</a></li>
+                        <li><span className={style.iconLink} style={aboutMe}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#aboutMe">About me</a></li>
                         <hr className={style.separator}/>
-                        <li><a className={style.menuItem} href="#mySkills">My skills</a></li>
+                        <li><span className={style.iconLink} style={exp}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#mySkills">My skills</a></li>
                         <hr className={style.separator}/>
-                        <li><a className={style.menuItem} href="#experience">Experience</a></li>
+                        <li><span className={style.iconLink} style={exp}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#experience">Experience</a></li>
                         <hr className={style.separator}/>
-                        <li><a className={style.menuItem} href="#portfolio">Portfolio</a></li>
+                        <li><span className={style.iconLink} style={portfolio}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#portfolio">Portfolio</a></li>
                         <hr className={style.separator}/>
-                        <li><a className={style.menuItem} href="#footer">Get in touch</a></li>
+                        <li><span className={style.iconLink} style={contact}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#footer">Get in touch</a></li>
                     </ul>
                 </div>
             </div>
