@@ -1,81 +1,110 @@
-.navigation {}
+@import "../../commons/sass/variables";
+@import "../../commons/sass/mixins";
 
-
-
-.imgLinks{
-    width: 50px;
-    height: 50px;
-    list-style: none;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: .3s;
-    margin: 20px 0;
-    border-radius: 50%;
-    background: #2b2a2a;
-    cursor: pointer;
-    &:hover {
-        background: #ffb400;
+.navigation {
+    .imgLinks{
+        width: 50px;
+        height: 50px;
+        list-style: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+        margin: 20px 0;
+        border-radius: 50%;
+        background: #2b2a2a;
+        cursor: pointer;
+        &:hover {
+            background: $mainColor;
+        }
+        .icon {
+            position: absolute;
+            font-size: 30px;
+            font-weight: 600;
+            color: $secondColor;
+            text-decoration: none;
+        }
+        .link {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            text-align: center;
+        }
     }
-}
-
-.icon {
-    position: absolute;
-    font-size: 30px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-}
-
-.link {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.menuBox > li {
-    position: relative;
-}
-
-.iconLink {
-    position: absolute;
-    top: 16px;
-    left: 24px;
-    width: 20px;
-    height: 20px;
 }
 
 .hamburgerMenu {
     display: none;
+    .menuBtn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 4;
+        box-sizing: content-box;
+        background: #2b2a2a;
+        border: 15px solid #2b2a2a;
+        border-radius: 5px;
+         span,
+         span::before,
+         span::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $secondColor;
+        }
+    }
+    .menuBox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: left;
+        background-color: #2b2a2a;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+        z-index: 3;
+        li {
+            position: relative;
+            .iconLink {
+                position: absolute;
+                top: 16px;
+                left: 24px;
+                width: 20px;
+                height: 20px;
+            }
+            .menuItem {
+                display: block;
+                padding: 12px 24px 12px 54px;
+                @include textFamilySizeWeightColor($fontFamilyMain, 20px, 500, $secondColor);
+                text-transform: uppercase;
+                text-decoration: none;
+                &:hover {
+                    color: $mainColor;
+                }
+            }
+        }
+        .separator {
+            border: 1px solid #333;
+            margin: 0 20px;
+            width: 80%;
+        }
+    }
+    .menuActive {
+        display: block;
+    }
 }
 
-.menuBtn {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 4;
-    box-sizing: content-box;
-    background: #2b2a2a;
-    border: 15px solid #2b2a2a;
-    border-radius: 5px;
-}
-
-.menuBtn > span,
-.menuBtn > span::before,
-.menuBtn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-}
 .menuBtn > span::before {
     content: '';
     top: -10px;
@@ -85,44 +114,12 @@
     top: 10px;
 }
 
-.menuBox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    text-align: left;
-    background-color: #2b2a2a;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    z-index: 3;
-}
 
-.menuActive {
-    display: block;
-}
-
-.menuItem {
-    display: block;
-    padding: 12px 24px 12px 54px;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.menuItem:hover {
-    color: #ffb400;
-}
 
 .menuBtnActive > span {
     transform: rotate(45deg);
 }
+
 .menuBtnActive > span::before {
     top: 0;
     transform: rotate(0);
@@ -130,19 +127,6 @@
 .menuBtnActive > span::after {
     top: 0;
     transform: rotate(90deg);
-}
-
-.menuBox {
-    transition-duration: .25s;
-}
-.menuItem {
-    transition-duration: .25s;
-}
-
-.separator {
-    border: 1px solid #333;
-    margin: 0 20px;
-    width: 80%;
 }
 
 @media screen and (max-width: 991px){
