@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Main.module.scss';
 import Navigation from "../Navigation/Navigation";
 import arrowIcon from "./../../assets/images/arrowHome.png";
+import avatar from "../../assets/images/photoAva.jpg";
 
 const Main = () => {
     const arrow = {
@@ -9,11 +10,16 @@ const Main = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     }
+    const ava = {
+        backgroundImage: `url(${avatar})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+    }
     return (
         <main className={style.mainContainer} id="home">
             <div className={style.frame}></div>
             <div className={style.textPhoto}>
-                <div className={style.photo}></div>
+                <div style={ava} className={style.photo}></div>
                 <div className={style.text}>
                     <h1 className={style.mainTitle}>I'M VLADISLAV GUSHCHIN
                         <span>REACT DEVELOPER</span>

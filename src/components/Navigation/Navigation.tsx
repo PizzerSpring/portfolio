@@ -5,6 +5,7 @@ import aboutMeIcon from '../../assets/images/aboutme.png';
 import portfolioIcon from '../../assets/images/portfolio.png';
 import contactIcon from '../../assets/images/contact.png';
 import expIcon from '../../assets/images/exp.png';
+import Link from "./Link";
 
 
 const Navigation = () => {
@@ -65,17 +66,17 @@ const Navigation = () => {
                 <div className={style.hamburgerMenu}>
                     <button className={`${style.menuBtn} ${isMenu ? style.menuBtnActive : ''}`} onClick={() =>  {setMenu(!isMenu)}}><span></span></button>
                     <ul className={`${style.menuBox} ${isMenu ? style.menuActive : ''}`}>
-                        <li><span className={style.iconLink} style={home}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#home">Home</a></li>
+                        <Link style={home} isMenu={isMenu} setMenu={setMenu} linkText={'Home'} linkA={'#home'}/>
                         <hr className={style.separator}/>
-                        <li><span className={style.iconLink} style={aboutMe}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#aboutMe">About me</a></li>
+                        <Link style={aboutMe} isMenu={isMenu} setMenu={setMenu} linkText={'About me'} linkA={'#aboutMe'}/>
                         <hr className={style.separator}/>
-                        <li><span className={style.iconLink} style={exp}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#mySkills">My skills</a></li>
+                        <Link style={exp} isMenu={isMenu} setMenu={setMenu} linkText={'My skills'} linkA={'#mySkills'}/>
                         <hr className={style.separator}/>
-                        <li><span className={style.iconLink} style={exp}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#experience">Experience</a></li>
+                        <Link style={exp} isMenu={isMenu} setMenu={setMenu} linkText={'Experience'} linkA={'#experience'}/>
                         <hr className={style.separator}/>
-                        <li><span className={style.iconLink} style={portfolio}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#portfolio">Portfolio</a></li>
+                        <Link style={portfolio} isMenu={isMenu} setMenu={setMenu} linkText={'Portfolio'} linkA={'#portfolio'}/>
                         <hr className={style.separator}/>
-                        <li><span className={style.iconLink} style={contact}></span><a onClick={() => setMenu(!isMenu)} className={style.menuItem} href="#footer">Get in touch</a></li>
+                        <Link style={contact} isMenu={isMenu} setMenu={setMenu} linkText={'Get in touch'} linkA={'#footer'}/>
                     </ul>
                 </div>
             </div>
