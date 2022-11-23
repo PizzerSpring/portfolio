@@ -12,6 +12,7 @@ const Aboutme = () => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     }
+
     return (
         <div id="aboutMe" className={style.aboutMe}>
             <div className={style.aboutMeTitle}>
@@ -47,7 +48,7 @@ const Aboutme = () => {
                             </li>
                             <li>
                                 <span className={style.titleInfo}>Email : </span>
-                                <span className={style.titleValueInfo}>vladislav9646@gmail.com</span>
+                                <span className={style.titleValueInfo}>vladislav9646</span><span className={`${style.titleValueInfo} ${style.email}`}>@gmail.com</span>
                             </li>
                             <li>
                                 <span className={style.titleInfo}>Telegram : </span>

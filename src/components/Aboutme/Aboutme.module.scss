@@ -17,6 +17,12 @@
     .title {
       @include textSizeWeightColor(56px, 900, $secondColor);
       text-align: center;
+      @media screen and (max-width: 476px) {
+        @include textSizeWeightColor(40px, 900, $secondColor);
+      }
+      @media screen and (max-width: 300px) {
+        @include textSizeWeightColor(35px, 900, $secondColor);
+      }
 
       span {
         color: $mainColor;
@@ -33,6 +39,15 @@
       text-transform: uppercase;
       transform: translateY(-50%);
       text-align: center;
+      @media screen and (max-width: 576px) {
+        @include text($fontFamilyMain, 90px, 800, rgba(255, 255, 255, 0.07), 0.7);
+      }
+      @media screen and (max-width: 476px) {
+        @include text($fontFamilyMain, 60px, 800, rgba(255, 255, 255, 0.07), 0.7);
+      }
+      @media screen and (max-width: 300px) {
+        @include text($fontFamilyMain, 45px, 800, rgba(255, 255, 255, 0.07), 0.7);
+      }
     }
   }
 }
@@ -183,4 +198,7 @@
   }
 }
 
+.email {
+  display: block;
+}
 

@@ -50,7 +50,19 @@
         display: block;
       }
       @media screen and (max-width: 576px) {
-        display: none;
+        width: 270px;
+        height: 270px;
+        min-width: 270px;
+      }
+      @media screen and (max-width: 476px) {
+        width: 240px;
+        height: 240px;
+        min-width: 240px;
+      }
+      @media screen and (max-width: 300px) {
+        width: 210px;
+        height: 210px;
+        min-width: 210px;
       }
     }
 

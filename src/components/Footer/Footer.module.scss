@@ -19,10 +19,22 @@
       text-transform: uppercase;
       margin: 0;
       text-align: center;
+      @media screen and (max-width: 476px) {
+        @include textFamilySizeWeightColor($fontFamilyMain, 40px, 900, $secondColor);
+      }
+      @media screen and (max-width: 300px) {
+        @include textFamilySizeWeightColor($fontFamilyMain, 30px, 900, $secondColor);
+      }
 
       span {
         @include textSizeWeightColor(56px, 900, $mainColor);
         text-transform: uppercase;
+        @media screen and (max-width: 476px) {
+          @include textSizeWeightColor(40px, 900, $mainColor);
+        }
+        @media screen and (max-width: 300px) {
+          @include textSizeWeightColor(30px, 900, $mainColor);
+        }
       }
     }
 
@@ -35,6 +47,15 @@
       top: 50%;
       text-transform: uppercase;
       transform: translateY(-50%);
+      @media screen and (max-width: 576px) {
+        @include text($fontFamilyMain, 90px, 800, rgba(255, 255, 255, 0.07), 0.7);
+      }
+      @media screen and (max-width: 476px) {
+        @include text($fontFamilyMain, 55px, 800, rgba(255, 255, 255, 0.07), 0.7);
+      }
+      @media screen and (max-width: 300px) {
+        @include text($fontFamilyMain, 40px, 800, rgba(255, 255, 255, 0.07), 0.7);
+      }
     }
   }
 
