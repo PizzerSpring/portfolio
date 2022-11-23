@@ -16,7 +16,7 @@ const Main = () => {
         backgroundPosition: 'center',
     }
     return (
-        <main className={style.mainContainer} id="home">
+        <div className={style.mainContainer} id="home">
             <div className={style.frame}></div>
             <div className={style.textPhoto}>
                 <div style={ava} className={style.photo}></div>
@@ -36,7 +36,7 @@ const Main = () => {
                 </div>
                 <Navigation/>
             </div>
-        </main>
+        </div>
 
     );
 };

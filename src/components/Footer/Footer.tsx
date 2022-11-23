@@ -54,7 +54,7 @@ const Footer = () => {
                 </h2>
                 <span className={style.titleBg}>Contact</span>
             </div>
-            <div className={`${containerStyle.container} ${style.descriptionForm}`}>
+            <div className={`${containerStyle.footerContainer} ${style.descriptionForm}`}>
                 <div>
                     <h3 className={style.textTitle}>DON'T BE SHY !</h3>
                     <p className={style.text}>
@@ -122,7 +122,7 @@ const Footer = () => {
                                 <span className={style.buttonIcon} style={telegram}></span>
                             </button>
                         </div>
-                        <div>
+                        <div className={style.active}>
                             {isMessageActive ? <span className={style.outputMessage}>Message sent!</span> : ''}
                         </div>
                     </form>

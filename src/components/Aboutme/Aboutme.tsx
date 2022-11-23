@@ -48,7 +48,7 @@ const Aboutme = () => {
                             </li>
                             <li>
                                 <span className={style.titleInfo}>Email : </span>
-                                <span className={style.titleValueInfo}>vladislav9646</span><span className={`${style.titleValueInfo} ${style.email}`}>@gmail.com</span>
+                                <span className={`${style.titleValueInfo} ${style.wrap}`} title='vladislav9646@gmail.com'>vladislav9646@gmail.com -</span>
                             </li>
                             <li>
                                 <span className={style.titleInfo}>Telegram : </span>
