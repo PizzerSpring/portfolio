@@ -19,46 +19,52 @@ const Aboutme = () => {
                 <h2 className={style.title}>ABOUT <span>ME</span></h2>
                 <span className={style.titleBackground}>Resume</span>
             </div>
-            <div className={`${containerStyle.container}`}>
+            <div className={`${containerStyle.aboutMeContainer}`}>
                 <div className={style.personalContainer}>
-                    <div className={style.info}>
+                    <div className={style.personalTitleContainer}>
                         <h3 className={style.personalTitle}>PERSONAL INFO</h3>
-                        <ul className={style.listUnstyled}>
-                            <li><span className={style.titleInfo}>First Name : </span><span
-                                className={style.titleValueInfo}>Vladislav</span></li>
-                            <li><span className={style.titleInfo}>Last Name : </span><span
-                                className={style.titleValueInfo}>Gushchin</span></li>
-                            <li><span className={style.titleInfo}>Age : </span><span className={style.titleValueInfo}>26 Years</span>
-                            </li>
-                            <li><span className={style.titleInfo}>Nationality : </span><span
-                                className={style.titleValueInfo}>Russian</span></li>
-                            <li><span className={style.titleInfo}>Freelance : </span><span
-                                className={style.titleValueInfo}>Accessible</span></li>
-                        </ul>
                     </div>
-                    <div className={`${style.info} ${style.exactInfo}`}>
-                        <ul className={style.listUnstyled}>
-                            <li>
-                                <span className={style.titleInfo}>Address : </span>
-                                <span className={style.titleValueInfo}>Novokuznetsk</span>
-                            </li>
-                            <li>
-                                <span className={style.titleInfo}>Phone : </span>
-                                <span className={style.titleValueInfo}>+7-961-860-05-12</span>
-                            </li>
-                            <li>
-                                <span className={style.titleInfo}>Email : </span>
-                                <span className={`${style.titleValueInfo} ${style.wrap}`} title='vladislav9646@gmail.com'>vladislav9646@gmail.com -</span>
-                            </li>
-                            <li>
-                                <span className={style.titleInfo}>Telegram : </span>
-                                <span className={style.titleValueInfo}>@PizzerSpring</span>
-                            </li>
-                            <li>
-                                <span className={style.titleInfo}>Languages : </span>
-                                <span className={style.titleValueInfo}>Russian</span>
-                            </li>
-                        </ul>
+                    <div className={style.personalInfoContainer}>
+                        <div className={style.info}>
+                            <ul className={style.listUnstyled}>
+                                <li><span className={style.titleInfo}>First Name : </span><span
+                                    className={style.titleValueInfo}>Vladislav</span></li>
+                                <li><span className={style.titleInfo}>Last Name : </span><span
+                                    className={style.titleValueInfo}>Gushchin</span></li>
+                                <li><span className={style.titleInfo}>Age : </span><span
+                                    className={style.titleValueInfo}>26 Years</span>
+                                </li>
+                                <li><span className={style.titleInfo}>Nationality : </span><span
+                                    className={style.titleValueInfo}>Russian</span></li>
+                                <li><span className={style.titleInfo}>Freelance : </span><span
+                                    className={style.titleValueInfo}>Accessible</span></li>
+                            </ul>
+                        </div>
+                        <div className={`${style.info} ${style.exactInfo}`}>
+                            <ul className={style.listUnstyled}>
+                                <li>
+                                    <span className={style.titleInfo}>Address : </span>
+                                    <span className={style.titleValueInfo}>Novokuznetsk</span>
+                                </li>
+                                <li>
+                                    <span className={style.titleInfo}>Phone : </span>
+                                    <span className={style.titleValueInfo}>+7-961-860-05-12</span>
+                                </li>
+                                <li>
+                                    <span className={style.titleInfo}>Email : </span>
+                                    <span className={`${style.titleValueInfo} ${style.wordBreak}`}
+                                          title='vladislav9646@gmail.com'>vladislav9646@gmail.com</span>
+                                </li>
+                                <li>
+                                    <span className={style.titleInfo}>Telegram : </span>
+                                    <span className={style.titleValueInfo}>@PizzerSpring</span>
+                                </li>
+                                <li>
+                                    <span className={style.titleInfo}>Languages : </span>
+                                    <span className={style.titleValueInfo}>Russian</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div className={style.buttonContainer}>
                         <a href="" className={style.button}>

@@ -53,6 +53,7 @@
 }
 
 .personalContainer {
+
   display: flex;
   justify-content: space-around;
   flex-basis: 50%;
@@ -62,10 +63,8 @@
     line-height: 40px;
     padding: 30px;
     max-width: 50%;
-
-    .personalTitle {
-      padding-bottom: 22px;
-      @include textSizeWeightColor(26px, 600, $secondColor);
+    @media screen and (max-width: 476px) {
+      padding: 10px;
     }
 
     .listUnstyled {
@@ -90,7 +89,7 @@
   }
 
   .exactInfo {
-    margin-top: 60px;
+    /*margin-top: 60px;*/
   }
 
   .buttonContainer {
@@ -135,11 +134,11 @@
         background-color: $mainColor;
       }
     }
-    @media screen and (max-width: 692px) {
+    @media screen and (max-width: 783px) {
         text-align: center;
     }
   }
-  @media screen and (max-width: 692px) {
+  @media screen and (max-width: 783px) {
       flex-basis: 100%;
   }
 }
@@ -193,33 +192,32 @@
 
     }
   }
-  @media screen and (max-width: 692px) {
+  @media screen and (max-width: 783px) {
       flex-basis: 100%;
   }
 }
 
+.wordBreak {
+  word-break: break-word;
+}
+/*
 .wrap {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%;
   display: inline-block;
+}*/
+.personalInfoContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (pointer: coarse), (hover: none) {
-  [title] {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-  }
-  [title]:focus::after {
-    content: attr(title);
-    position: absolute;
-    top: 90%;
-    color: #000;
-    background-color: #fff;
-    border: 1px solid;
-    width: fit-content;
-    padding: 3px;
+.personalTitleContainer {
+  width: 100%;
+  padding-left: 25px;
+  @include textSizeWeightColor(26px, 600, $secondColor);
+  .personalTitle {
+    font-weight: 600;
   }
 }
