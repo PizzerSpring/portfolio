@@ -40,7 +40,7 @@ const Aboutme = () => {
                                     className={style.titleValueInfo}>Accessible</span></li>
                             </ul>
                         </div>
-                        <div className={`${style.info} ${style.exactInfo}`}>
+                        <div className={style.info}>
                             <ul className={style.listUnstyled}>
                                 <li>
                                     <span className={style.titleInfo}>Address : </span>

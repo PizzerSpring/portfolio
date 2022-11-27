@@ -54,7 +54,7 @@ const Footer = () => {
                 </h2>
                 <span className={style.titleBg}>Contact</span>
             </div>
-            <div className={`${containerStyle.footerContainer} ${style.descriptionForm}`}>
+            <div className={style.descriptionForm}>
                 <div>
                     <h3 className={style.textTitle}>DON'T BE SHY !</h3>
                     <p className={style.text}>

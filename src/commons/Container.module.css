@@ -7,14 +7,6 @@
     margin: 0 auto;
 }
 
-.footerContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 80%;
-    margin: 0 auto;
-}
-
 .aboutMeContainer {
     display: flex;
     justify-content: space-between;

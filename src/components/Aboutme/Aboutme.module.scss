@@ -53,44 +53,59 @@
 }
 
 .personalContainer {
-
   display: flex;
   justify-content: space-around;
   flex-basis: 50%;
   flex-wrap: wrap;
 
-  .info {
-    line-height: 40px;
-    padding: 30px;
-    max-width: 50%;
-    @media screen and (max-width: 476px) {
-      padding: 10px;
+  .personalTitleContainer {
+    width: 100%;
+    padding-left: 25px;
+    @include textSizeWeightColor(26px, 600, $secondColor);
+
+    .personalTitle {
+      font-weight: 600;
     }
+  }
 
-    .listUnstyled {
-      padding-left: 0;
-      list-style: none;
+  .personalInfoContainer {
+    display: flex;
+    justify-content: space-between;
 
-      li {
-        .titleInfo {
-          @include text($fontFamilySecond, 15px, 500, $secondColor, 1.6);
-          opacity: .8;
-        }
+    .info {
+      line-height: 40px;
+      padding: 30px;
+      max-width: 50%;
+      @media screen and (max-width: 476px) {
+        padding: 10px;
+      }
 
-        .titleValueInfo {
-          @include text($fontFamilySecond, 15px, 600, $secondColor, 1.6);
-          @media screen and (min-width: 576px) {
+      .listUnstyled {
+        padding-left: 0;
+        list-style: none;
+
+        li {
+          .titleInfo {
+            @include text($fontFamilySecond, 15px, 500, $secondColor, 1.6);
+            opacity: .8;
+          }
+
+          .titleValueInfo {
+            @include text($fontFamilySecond, 15px, 600, $secondColor, 1.6);
+            @media screen and (min-width: 576px) {
               display: inline-block;
+            }
+          }
+
+          .wordBreak {
+            word-break: break-word;
           }
         }
       }
+
     }
-
   }
 
-  .exactInfo {
-    /*margin-top: 60px;*/
-  }
 
   .buttonContainer {
     margin-top: 1rem;
@@ -134,12 +149,14 @@
         background-color: $mainColor;
       }
     }
+
     @media screen and (max-width: 783px) {
-        text-align: center;
+      text-align: center;
     }
   }
+
   @media screen and (max-width: 783px) {
-      flex-basis: 100%;
+    flex-basis: 100%;
   }
 }
 
@@ -192,14 +209,12 @@
 
     }
   }
+
   @media screen and (max-width: 783px) {
-      flex-basis: 100%;
+    flex-basis: 100%;
   }
 }
 
-.wordBreak {
-  word-break: break-word;
-}
 /*
 .wrap {
   overflow: hidden;
@@ -208,16 +223,3 @@
   max-width: 100%;
   display: inline-block;
 }*/
-.personalInfoContainer {
-  display: flex;
-  justify-content: space-between;
-}
-
-.personalTitleContainer {
-  width: 100%;
-  padding-left: 25px;
-  @include textSizeWeightColor(26px, 600, $secondColor);
-  .personalTitle {
-    font-weight: 600;
-  }
-}
