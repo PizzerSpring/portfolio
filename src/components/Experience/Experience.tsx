@@ -72,7 +72,7 @@ const Experience = () => {
                 </div>
                 <div>
                     <ExperienceCard style={styleIconReact} story={'2022'} title={'REACT DEVELOPER '} description={`I found it.incubator.io courses on react , which revealed not only the features of this framework, but also the architectural principles of building applications.`} theme={'React'}/>
-                    <ExperienceCard style={styleIconTS} story={'2022'} title={'REACT DEVELOPER '} description={`Then I made an adaptive landing page and added two of my projects there. Trello analogue and unfinished online cosmetics store. I do all projects with Typescript.`} theme={'Projects'}/>
+                    <ExperienceCard style={styleIconTS} story={'2022'} title={'REACT DEVELOPER '} description={`Then I made an adaptive landing page, in which I will add my projects later. For now it's just pictures.`} theme={'Projects'}/>
                     <ExperienceCard style={styleIconRedux} story={'2022'} title={'REACT DEVELOPER '} description={`I'm also learning how Redux works. And I try to introduce modern libraries into projects. For example "formic".`} theme={'Redux'}/>
                 </div>
             </div>

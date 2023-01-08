@@ -28,11 +28,11 @@ const Projects = () => {
             </div>
             <div className={`${containerStyle.container} ${style.flexStartContainer}`}>
                 <div>
-                    <ProjectsCard style={trello} address={''} title={'Trello analogue'} description={'Trello helps bring all employees, tasks, and tools together in one place.'}/>
+                    <ProjectsCard style={trello} address={''} title={'Trello'} description={'Trello helps bring all employees, tasks, and tools together in one place.'}/>
                 </div>
-                <div>
+                {/*<div>
                     <ProjectsCard style={cosmeticsStore} address={''} title={'Online cosmetics store'} description={'Online store of professional cosmetics.'}/>
-                </div>
+                </div>*/}
             </div>
             <hr className={separatorStyle.separator}/>
         </div>

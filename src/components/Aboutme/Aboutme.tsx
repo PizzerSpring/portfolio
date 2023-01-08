@@ -80,7 +80,7 @@ const Aboutme = () => {
                         <AboutMeCard count={'2'} descriptionTop={'HAPPY'} descriptionBottom={'CUSTOMERS'}/>
                     </div>
                     <div>
-                        <AboutMeCard count={'2'} descriptionTop={'COMPLETED'} descriptionBottom={'PROJECTS'}/>
+                        <AboutMeCard count={'0+'} descriptionTop={'COMPLETED'} descriptionBottom={'PROJECTS'}/>
                         <AboutMeCard count={'0'} descriptionTop={'AWARDS'} descriptionBottom={'WON'}/>
                     </div>
                 </div>
