@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.272105d6.css",
-    "main.js": "/portfolio/static/js/main.0b4654f5.js",
+    "main.css": "/portfolio/static/css/main.45261cd1.css",
+    "main.js": "/portfolio/static/js/main.5cbafa2a.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/cosmeticsstore.png": "/portfolio/static/media/cosmeticsstore.fd24138117f22712fd46.png",
     "static/media/trello.png": "/portfolio/static/media/trello.f2747f0af26bf9f741b1.png",
     "static/media/photoAva.jpg": "/portfolio/static/media/photoAva.e6dcb50ce8587eeaccd7.jpg",
     "static/media/redux.png": "/portfolio/static/media/redux.891ae327dcbedc729238.png",
     "index.html": "/portfolio/index.html",
-    "main.272105d6.css.map": "/portfolio/static/css/main.272105d6.css.map",
-    "main.0b4654f5.js.map": "/portfolio/static/js/main.0b4654f5.js.map",
+    "main.45261cd1.css.map": "/portfolio/static/css/main.45261cd1.css.map",
+    "main.5cbafa2a.js.map": "/portfolio/static/js/main.5cbafa2a.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.272105d6.css",
-    "static/js/main.0b4654f5.js"
+    "static/css/main.45261cd1.css",
+    "static/js/main.5cbafa2a.js"
   ]
 }
